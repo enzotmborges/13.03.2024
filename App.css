@@ -1,0 +1,58 @@
+body{
+    max-width: 400px;/*tamanho máximo da tela*/
+    padding: 20px;
+    margin: 0 auto;/*margim interna do obj.*/
+    border: 1px double #ccc;
+    border-radius: 5px;/*deixa redondinho*/
+}
+
+h1{
+    text-align: center;
+}
+
+form{/*componente formulario inteiro */
+    display: flex;
+    flex-direction: column;
+    /* coluniza os componentes do forms */
+}
+
+label{ /* A parte onde informa 'Nome', 'Email'*/
+    margin-top: 10px;
+}
+
+input{/* caixinha branca que o user digita*/
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    box-shadow: 0 5px 10px  rgb(123, 123, 245);
+}
+
+button{
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #9d36da;
+    cursor: pointer;/*o ponteiro vira uma 'mãozinha*/
+    color: white;
+    border-radius: 5px;
+    border: none;
+    transition: 1s;
+}
+
+button:hover{
+    /*hover é uma pseudo-classe,
+    que faz com que mude o css caso o cursor do cliente 
+    esteja sobre o componente*/
+    background-color: #3e0b5c;
+   transform: translateY(10px);
+}
+
+.check{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#check{
+    margin-right: 15px;
+}
